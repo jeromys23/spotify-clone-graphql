@@ -55,6 +55,11 @@ class SpotifyAPI extends RESTDataSource {
   async GetUserPlaylists() {
       return this.get("me/playlists")
   }
+  async GetTrackData(id) {
+    return this.get(`tracks/${id}`)
+  }
+
+
   
 }
 
